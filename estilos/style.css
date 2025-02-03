@@ -17,6 +17,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  height: auto;
 }
 
 
@@ -46,18 +47,28 @@ header article h1.til {
 
 .illustra img{
   padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 10px;
   height: 460px;
   width: 400px;
 }
 
 header article p {
-  padding: 1rem 0px;
+  width: 500px;
+  padding-top: 1rem;
+  padding-left: 0px;
+  margin-right: 10px;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 19px;
   line-height: 32px;
 }
 
-header button {
+.p {
+  max-width: 500px;
+}
+
+.btn {
+  cursor: pointer;
   margin-top: 1rem;
   padding: 12px 26px;
   border-radius: 4px;
@@ -66,17 +77,80 @@ header button {
   color: white;
 }
 
-header button a {
+.btn a {
   text-decoration: none;
   color: white;
 }
 
 main h1 {
-  
+  margin-top: 8rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 26;
 }
 
-main {
+.box {
+  gap: 17px;
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.card {
+  transition: all 0.3s ease-in-out, opacity 0.3s ease-in-out;;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(115%);
+  transition: 0.2s;
+  opacity: 1;
+}
+
+.box .card:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+
+.card img {
+  margin-top: 1rem;
+  align-self: center;
+  width: 366px;
+  padding: 1rem;
+  height: 170px;
+}
+
+.card h4, p {
+  max-width: 350px;
+  padding-left: 2rem;
+}
+
+
+.card p{
+  padding-top: 5px;
+  max-width: 350px;
+}
+
+form {
+  margin-top: 7rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+form > input, textarea, button{
+  width: 500px;
+  border: 0.1px inset #f1eeee67;
+  border-radius: 20px;
+  padding: 10px ; 
+  align-self: center;
+  margin-top: 1rem;
+  outline: none;
+}
+
+textarea {
+  font-family: 'Roboto';
 }

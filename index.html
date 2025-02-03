@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Blog</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/mq.css">
 </head>
 <body>
     <header>
@@ -21,10 +22,10 @@
                 de programação em um só lugar
             </h1>
 
-            <p>Explore o topo da programação em um só lugar! <br>
+            <p class="p">Explore o topo da programação em um só lugar! <br>
                 Seu destino único para dicas e tendências atuais.</p>
 
-            <button>
+            <button class="btn">
                 <a href="#">
                     <h1>BUSCAR ARTIGOS</h1>
                 </a>
@@ -35,43 +36,58 @@
 
     <main>
         <h1>Artigos recomendados</h1>
-
-        <div class="card">
-            <img src="imagens/image-1.png">
-            <h4></h4>
-            <p></p>
-        </div>
-
-        <div class="card">
-            <img src="imagens/image-2.png">
-            <h4></h4>
-            <p></p>
-        </div>
-
-        <div class="card">
-            <img src="imagens/image-3.png">
-            <h4></h4>
-            <p></p>
-        </div>
-
-        <div class="card">
-            <img src="imagens/image-4.png">
-            <h4></h4>
-            <p></p>
-        </div>
-
-        <div class="card">
-            <img src="imagens/image-5.png">
-            <h4></h4>
-            <p></p>
-        </div>
-
-        <div class="card">
-            <img src="imagens/image-6.png">
-            <h4></h4>
-            <p></p>
+        <div class="box">
+    
+            <div class="card">
+                <img src="imagens/image-1.png">
+                <h4>O que é linguagem de programação? <br>Conheça as principais</h4>
+                <p>Uma das mais populares vertentes da tecnologia da informação, a área de...</p>
+            </div>
+    
+            <div class="card">
+                <img src="imagens/image-2.png">
+                <h4>Python: por que a linguagem é tão usada para Data Science e finanças?</h4>
+                <p>O mundo da programação conta com algumas opções de linguagem para...</p>
+            </div>
+    
+            <div class="card">
+                <img src="imagens/image-3.png">
+                <h4>GitHub tem receita de US$ 1 bilhão e 90 milhões de usuários</h4>
+                <p>O popular serviço de repositório de código GitHub foi adquirido pela...</p>
+            </div>
+    
+            <div class="card">
+                <img src="imagens/image-4.png">
+                <h4>15 comandos no GIT que os desenvolvedores precisam saber</h4>
+                <p>Dominar os comandos GIT é uma habilidade que se conquista com...</p>
+            </div>
+    
+            <div class="card">
+                <img src="imagens/image-5.png">
+                <h4>GIT e GitHub: o que são e quais as diferenças entre eles?</h4>
+                <p>Git e GibHub são dois softwares de controle de versão essenciais para...</p>
+            </div>
+    
+            <div class="card">
+                <img src="imagens/image-6.png">
+                <h4>GitHub Copilot ganha integração com GPT-4 e interface conversacional</h4>
+                <p>O GitHub Copilot, ferramenta de desenvolvimento baseada em IA...</p>
+            </div>
         </div>
     </main>
+
+    <footer>
+        <section class="form">
+           
+            <form action="#">
+                <h1>Entre em contato</h1>
+                <input type="text" name="Nome" id="inome" placeholder="Nome">
+                <input type="email" name="Email" id="iemail" placeholder="Email">
+                <textarea rows="4" cols="50" placeholder="Assunto da mensagem"></textarea>
+                <button class="btn"><h1>ENTRAR EM CONTATO</h1></button>
+            </form>
+        </section>
+    </footer>
     
 </body>
 </html>

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+
+@media (max-width: 768px) {
+    
+   
+
+    header article {
+        width: 400px;
+    }
+
+    header article .p {
+        width: 400px;
+        font-size: 17px;
+    }
+
+    header > article > h1.til {
+        text-align: center;
+        font-size: 30px;
+    }
+    .p {
+        text-align: center;
+    }
+
+   button {
+    width: 400px;
+   }
+
+   form > input, textarea {
+    width: 400px;
+   }
+   
+    
+}
